@@ -1,0 +1,35 @@
+@font-face {
+  src: url("./assets/fonts/universe/UniversforKPMG.ttf");
+  font-family: "universe";
+}
+
+@font-face {
+  src: url("./assets/fonts/notosans/NotoSans-Condensed.ttf");
+  font-family: "noto";
+}
+@import "~antd/dist/antd.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+
+body {
+  margin: 0;
+  font-family: "noto";
+  font-size: 16px;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+.ant-timeline-item {
+  padding: 0 0 15px;
+}
+.ant-timeline-item-last {
+  padding-bottom: 0px;
+}

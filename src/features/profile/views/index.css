@@ -1,0 +1,95 @@
+.action_wrapper {
+  background: #ffffff;
+  border: 1px solid rgba(22, 40, 40, 0.2);
+  box-sizing: border-box;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+}
+@media (max-width: 700px) {
+  .action_wrapper {
+    margin-top: 150px;
+    width: 90vw;
+  }
+  .side_view {
+    margin-top: 20px;
+    width: 90vw;
+    margin-left: 0px !important;
+  }
+  .form-view-width {
+    margin-left: 1px !important;
+    margin-right: 1px !important;
+    padding-left: 0px;
+  }
+}
+.nav_text {
+  font-family: universe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+
+  /* Gray 6 */
+
+  color: #162828;
+}
+.current_view {
+  font-family: universe;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #162828;
+}
+.side_view {
+  background: #0075c5;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin-left: 15px;
+  height: 250px;
+}
+.status_text {
+  font-family: universe;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  width: 130px;
+}
+.progress_text {
+  font-family: universe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  color: #ffffff;
+}
+.completion_stage {
+  font-family: universe;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.card_container {
+  display: flex;
+  margin-bottom: "15px";
+  padding-bottom: "7px";
+  border-bottom: "1px solid rgba(22, 40, 40, 0.1)";
+  flex-wrap: wrap;
+}
+.form-view-width {
+  margin-left: 50px;
+  margin-right: 50px;
+}
