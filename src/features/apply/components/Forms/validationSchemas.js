@@ -23,9 +23,9 @@ export const basicFormValidationSchema = object({
   PostalAddress: string("Enter your postal address")
     .required("your postal address is required")
     .min(2, "too short"),
-  CurrentTakeHome: number("Enter your current salary")
-    .required("your current salary is required")
-    .min(2, "too short"),
+  CurrentTakeHome: string("Select your current salary").required(
+    "your current salary is required"
+  ),
 });
 
 export const workFormValidationSchema = yup.object().shape({

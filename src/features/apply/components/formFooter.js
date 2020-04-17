@@ -18,9 +18,11 @@ const FooterStyle = styled.div`
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
     color: #ffffff;
     padding: 7px;
     cursor: pointer;
+    min-width: 125px;
   }
 `;
 const FormFooter = ({

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ReviewItem from "../reviewItem";
+import FormFooter from "../formFooter";
 import { Table } from "antd";
 import { ReviewStyle } from "../../style";
 
@@ -42,6 +43,52 @@ const eduColumns = [
     key: "Location",
   },
 ];
+const profColumns = [
+  {
+    title: "Name",
+    dataIndex: "Name",
+    key: "Name",
+  },
+  {
+    title: "Body",
+    dataIndex: "Body",
+    key: "Body",
+  },
+  {
+    title: "Obtained At",
+    dataIndex: "ObtainedAt",
+    key: "ObtainedAt",
+  },
+];
+const fileColumns = [
+  {
+    title: "Document Type",
+    dataIndex: "DocTypeName",
+    key: "DocTypeName",
+  },
+  {
+    title: "File Name",
+    dataIndex: "FileNameWithFormat",
+    key: "FileNameWithFormat",
+  },
+];
+const workColumns = [
+  {
+    title: "Employer",
+    dataIndex: "Employer",
+    key: "DocTypeName",
+  },
+  {
+    title: "Job Title",
+    dataIndex: "JobTitle",
+    key: "JobTitle",
+  },
+  {
+    title: "Industry",
+    dataIndex: "Industry",
+    key: "Industry",
+  },
+];
 const eduData = [
   {
     UniversityName: "Crawford University",
@@ -49,7 +96,21 @@ const eduData = [
     DegreeType: "Bsc",
   },
 ];
-const Review = ({ editFunctions }) => {
+const Review = ({
+  data,
+  editFunctions,
+  displayPreviousForm,
+  handleSubmit,
+  isLoading,
+}) => {
+  const extractData = () => {
+    return Object.entries(data["Your Information"]).map(([title, value]) => {
+      return {
+        title,
+        value,
+      };
+    });
+  };
   return (
     <ReviewStyle>
       <ReviewItem
@@ -57,7 +118,7 @@ const Review = ({ editFunctions }) => {
         name={"Your Information"}
       >
         <div className="info_wrapper">
-          {data.map((datum) => (
+          {extractData().map((datum) => (
             <div className="info_container">
               <span className="info_header">{datum.title}</span>
               <span className="info_body">{datum.value}</span>
@@ -68,25 +129,51 @@ const Review = ({ editFunctions }) => {
       <ReviewItem
         onEditClick={() => editFunctions["workHistory"]()}
         name={"Work History"}
-      />
+      >
+        <Table
+          columns={workColumns}
+          dataSource={data["Work History"]}
+          pagination={false}
+        />
+      </ReviewItem>
       <ReviewItem
         onEditClick={() => editFunctions["eduBackground"]()}
         name={"Educational Background"}
       >
-        <Table columns={eduColumns} dataSource={eduData} pagination={false} />
+        <Table
+          columns={eduColumns}
+          dataSource={data["Educational Background"]}
+          pagination={false}
+        />
       </ReviewItem>
       <ReviewItem
         onEditClick={() => editFunctions["professional"]()}
         name={"Professional Qualification"}
       >
-        <Table columns={eduColumns} dataSource={eduData} pagination={false} />
+        <Table
+          columns={profColumns}
+          dataSource={data["Professional Qualifications"]}
+          pagination={false}
+        />
       </ReviewItem>
       <ReviewItem
         onEditClick={() => editFunctions["upload"]()}
         name={"Supporting Documents"}
       >
-        <Table columns={eduColumns} dataSource={eduData} pagination={false} />
+        <Table
+          columns={fileColumns}
+          dataSource={data["File Upload"]}
+          pagination={false}
+        />
       </ReviewItem>
+      <FormFooter
+        isLoading={isLoading}
+        previousButtonAction={displayPreviousForm}
+        action={handleSubmit}
+        hasPreviousButton
+        width="100%"
+        actionText="Submit Application"
+      />
     </ReviewStyle>
   );
 };

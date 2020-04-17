@@ -162,7 +162,6 @@ const ProfessionalForm = (props) => {
                     <Item
                       style={{
                         display: "flex",
-                        justifyContent: "space-between",
                       }}
                     >
                       {index > 0 && (

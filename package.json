@@ -2,7 +2,7 @@
   "name": "avarture",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ec2-3-12-103-122.us-east-2.compute.amazonaws.com/avature_web",
+  "homepage": "https://apps.ng.kpmg.com/krs_web",
   "dependencies": {
     "@material-ui/core": "^4.4.0",
     "@material-ui/icons": "^4.2.1",

@@ -1,9 +1,14 @@
 import styled from "styled-components";
 
 export const DetailsViewWrapper = styled.div`
+  text-align: center;
   div {
     margin-bottom: 10px;
   }
+  .plus {
+    display: none;
+  }
+
   .jobTitle {
     font-family: Noto Sans;
     font-style: normal;
@@ -47,6 +52,19 @@ export const DetailsViewWrapper = styled.div`
     .contact_wrapper span:nth-child(1) {
       font-weight: 600;
       font-size: 14px;
+    }
+  }
+  @media (max-width: 800px) {
+    .segment_description {
+      width: 100%;
+    }
+    .segment_details {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+    .plus {
+      display: block;
     }
   }
 `;

@@ -6,6 +6,7 @@ import Radium, { StyleRoot } from "radium";
 import { Form, Input, Button, Select, Radio, Table } from "antd";
 import { Formik } from "formik";
 import AnimateForm from "./animateOnDisplay";
+import { fileToBase64 } from "../../../../helpers/utils";
 import { basicFormValidationSchema } from "./validationSchemas";
 import { FormWrapperStyle } from "../../style";
 
@@ -22,6 +23,7 @@ const DocumentForms = (props) => {
   const {
     values,
     errors,
+    tableData,
     touched,
     handleSubmit,
     handleChange,
@@ -61,14 +63,22 @@ const DocumentForms = (props) => {
     handleChange(e);
     setFieldTouched(e.target.name, true, false);
   };
+  const handleFileChange = async (e) => {
+    const file = e.target.files[0];
+    console.log(file.name);
+    const base64 = await fileToBase64(file);
+    handleChange({ target: { value: base64, name: "B64" } });
+    handleChange({ target: { value: file.name, name: "FileNameWithFormat" } });
+  };
+
   const columns = [
     {
       title: "File Name",
-      dataIndex: "FileName",
+      dataIndex: "FileNameWithFormat",
     },
     {
       title: "Document type",
-      dataIndex: "DocumentType",
+      dataIndex: "DocTypeName",
     },
   ];
   return (
@@ -79,16 +89,16 @@ const DocumentForms = (props) => {
             <Item label="Document Type" />
 
             <Item>
-              <Radio.Group>
-                <Radio value={1}>Curriculum Vitae</Radio>
+              <Radio.Group name={"DocTypeName"} onChange={handleChange}>
+                <Radio value={"Curriculum Vitae"}>Curriculum Vitae</Radio>
                 <Radio value={2}>Others(optional)</Radio>
               </Radio.Group>{" "}
             </Item>
 
-            <Item label="Type of Degree">
+            <Item label="Type Of Document">
               <Input
                 onChange={handleInputChange}
-                name={`document type`}
+                name={`DocTypeName`}
                 placeholder="enter document type"
               />
             </Item>
@@ -100,20 +110,29 @@ const DocumentForms = (props) => {
               help={touched.PostalAddress && errors && errors.PostalAddress}
             >
               <Input
-                onChange={handleInputChange}
-                name="File"
+                onChange={handleFileChange}
+                name="Document"
                 type={"file"}
-                placeholder="Enter your postal address"
+                placeholder="Select a file"
               />
             </Item>
             <Item style={{ display: "flex", justifyContent: "flex-end" }}>
-              <Button className={"upload_button"}>Upload Document</Button>
+              <Button
+                onClick={() => handleSubmit()}
+                className={"upload_button"}
+              >
+                Upload Document
+              </Button>
             </Item>
             <Item>
               <Table
                 columns={columns}
                 pagination={false}
-                dataSource={[{ FileName: "no document has been uploaded yet" }]}
+                dataSource={
+                  tableData.length > 0
+                    ? tableData
+                    : [{ FileName: "no document has been uploaded yet" }]
+                }
               />
             </Item>
           </Form>
@@ -122,7 +141,6 @@ const DocumentForms = (props) => {
           isLoading={isLoading}
           previousButtonAction={displayPreviousForm}
           hasPreviousButton
-          action={handleSubmit}
           width="100%"
           actionText="Save and Continue"
         />
@@ -136,6 +154,7 @@ const DocumentFormView = ({
   onSubmit,
   displayPreviousForm,
   isLoading,
+  tableData,
 }) => {
   return (
     <StyleRoot>
@@ -143,7 +162,6 @@ const DocumentFormView = ({
         <Formik
           enableReinitialize={true}
           initialValues={initialValues}
-          validationSchema={basicFormValidationSchema}
           onSubmit={onSubmit}
           displayPreviousForm={displayPreviousForm}
         >
@@ -153,6 +171,7 @@ const DocumentFormView = ({
                 {...props}
                 isLoading={isLoading}
                 displayPreviousForm={displayPreviousForm}
+                tableData={tableData}
               />
             );
           }}

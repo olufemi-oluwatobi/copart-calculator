@@ -5,8 +5,10 @@ export const ApplicationViewWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   .segment_details {
     display: flex;
+    margin-left: ${(props) => props.headerMargin};
   }
   .segment_name {
     font-size: 24px;
@@ -69,6 +71,25 @@ export const ApplicationViewWrapper = styled.div`
       line-height: 130%;
     }
   }
+  .step_number {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 130%;
+    margin-bottom: 10px;
+    color: #aeaeb3;
+  }
+  @media (max-width: 800px) {
+    margin-left: 20px;
+    display: flex;
+    margin-right: 20px;
+    align-items: stretch;
+
+    .job_details,
+    .progress_details {
+      display: none;
+    }
+  }
 `;
 
 export const FormWrapperStyle = styled.div`
@@ -84,7 +105,7 @@ export const FormWrapperStyle = styled.div`
     width: calc(50% - 12px);
   }
   .ant-form-item {
-    margin-bottom: 2px;
+    margin-bottom: 10px;
   }
   .ant-form-vertical .ant-form-item-label,
   .ant-col-24.ant-form-item-label,
@@ -107,8 +128,8 @@ export const FormWrapperStyle = styled.div`
   }
 
   @media (max-width: 700px) {
-    width: 100% !important;
-
+    width: calc(100vw - 50px);
+    margin-left: 0px;
     .half_view_form {
       display: block;
       width: 100%;
@@ -220,5 +241,8 @@ export const ReviewStyle = styled.div`
       align-items: center;
       color: #172b4d;
     }
+  }
+  @media (max-width: 800px) {
+    width: 90%;
   }
 `;

@@ -197,10 +197,8 @@ const EduForm = (props) => {
                     <Item
                       style={{
                         display: "flex",
-                        justifyContent: "space-between",
                       }}
                     >
-                      <Radio>I currently work here</Radio>
                       {index > 0 && (
                         <span
                           onClick={() => arrayHelpers.remove(index)}
@@ -228,7 +226,7 @@ const EduForm = (props) => {
                           }
                           className="add_another"
                         >
-                          add a new role
+                          add another
                         </span>
                       </Item>
                     )}

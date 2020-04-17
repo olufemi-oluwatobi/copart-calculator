@@ -74,7 +74,7 @@ const InfoForms = (props) => {
               value={values.Title}
               onChange={handleSelectChange}
             >
-              {["Mrs", "Mr", "Miss"].map((title) => (
+              {["Mrs", "Mr", "Ms", "Prof", "Sir", "Dr"].map((title) => (
                 <Option name="Title" value={title}>
                   {title}
                 </Option>
@@ -157,13 +157,25 @@ const InfoForms = (props) => {
             }
             help={touched.CurrentTakeHome && errors && errors.CurrentTakeHome}
           >
-            <Input
-              onChange={handleInputChange}
-              name="CurrentTakeHome"
+            <Select
+              placeholder="select your current salary"
               value={values.CurrentTakeHome}
-              type="number"
-              placeholder="Enter your current salary"
-            />
+              onChange={handleSelectChange}
+            >
+              {[
+                "below 500,000",
+                "500,000 - 699,999",
+                "600,000 - 799,999",
+                "800,000 - 899,999",
+                "900,000 - 1,999,999",
+                "2,000,000 - 3,000,000",
+                "Above 3,000,000 ",
+              ].map((CurrentTakeHome) => (
+                <Option name="CurrentTakeHome" value={CurrentTakeHome}>
+                  {CurrentTakeHome}
+                </Option>
+              ))}
+            </Select>
           </Form.Item>
         </Form>
         <FormFooter

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { fadeIn } from "react-animations";
 import Radium, { StyleRoot } from "radium";
 import { FieldArray, Formik } from "formik";
-import { Form, Input, Radio, Select } from "antd";
+import { Form, Input, Checkbox, Select } from "antd";
 
 import { workFormValidationSchema } from "./validationSchemas";
 import { FormWrapperStyle } from "../../style";
@@ -31,7 +31,7 @@ const WorkForm = (props) => {
     setFieldTouched,
     displayPreviousForm,
   } = props;
-
+  console.log(values);
   let workInformation = {
     Employer: "",
     JobTitle: "",
@@ -47,23 +47,17 @@ const WorkForm = (props) => {
     handleChange({ target: { value, name } });
     setFieldTouched(name, true, false);
   };
-  const onDataPick = (_, value, name) => {
-    handleChange({ target: { value, name } });
-    setFieldTouched(name, true, false);
-  };
+
   const handleInputChange = (e) => {
+    console.log(e);
     handleChange(e);
     setFieldTouched(e.target.name, true, false);
   };
 
-  const appendWordToEachElementOfAnArray = (array, word, position) => {
-    const newArray = [];
-    array.forEach((element) =>
-      newArray.push(
-        position === "before" ? `${word} ${element}` : `${element} ${word}`
-      )
-    );
-    return newArray;
+  const handleRadioChange = (e) => {
+    const { name, checked } = e.target;
+    handleChange({ target: { value: checked, name } });
+    setFieldTouched(name, true, false);
   };
 
   const getValidationStatus = (touched, errors, key, index) => {
@@ -187,10 +181,17 @@ const WorkForm = (props) => {
                     <Item
                       style={{
                         display: "flex",
-                        justifyContent: "space-between",
+                        justifyContent: "baseline",
                       }}
                     >
-                      <Radio>I currently work here</Radio>
+                      <Checkbox
+                        onChange={handleRadioChange}
+                        name={`workExperience[${index}].IsCurrentWork`}
+                        value={getValue(index, "IsCurrentWork")}
+                        checked={getValue(index, "IsCurrentWork")}
+                      >
+                        I currently work here
+                      </Checkbox>
                       {index > 0 && (
                         <span
                           onClick={() => arrayHelpers.remove(index)}
