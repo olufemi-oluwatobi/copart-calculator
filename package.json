@@ -1,8 +1,7 @@
 {
-  "name": "avarture",
+  "name": "copart-calculator",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://apps.ng.kpmg.com/krs_web",
   "dependencies": {
     "@material-ui/core": "^4.4.0",
     "@material-ui/icons": "^4.2.1",
@@ -30,6 +29,7 @@
     "react-avatar": "^3.6.0",
     "react-dom": "^16.9.0",
     "react-file-drop": "^0.2.8",
+    "react-ga": "^2.7.0",
     "react-js-pagination": "^3.0.2",
     "react-rating": "^1.7.2",
     "react-redux": "^7.1.1",
@@ -40,16 +40,22 @@
     "redux": "^4.0.4",
     "redux-thunk": "^2.3.0",
     "styled-components": "^4.3.2",
+    "tti-polyfill": "^0.2.2",
     "yup": "^0.27.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "aws s3 sync build/ s3://copartfeecalculator.com --acl public-read"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "engines": {
+    "npm": "5.7.1",
+    "node": "9.5.0"
   },
   "browserslist": {
     "production": [

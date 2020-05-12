@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { generalHttpRequest } from "../helpers/httpHelpers";
 import baseUrl from "../config/baseUrl";
 
 const useHttpRequest = () => {
@@ -9,6 +8,7 @@ const useHttpRequest = () => {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     const fetchData = async () => {
+      const currentTime = new Date().getMilliseconds();
       setLoading(true);
       try {
         const res = await fetch(`${baseUrl}${url}`, {
@@ -25,16 +25,18 @@ const useHttpRequest = () => {
           setRequestData({});
         } else {
           setRequestData({});
-          setError("failed to submit");
+          setError("failed to submit, please try again");
         }
       } catch (error) {
-        setError(error.message);
+        setError("failed to complete your request, please try again");
         setRequestData({});
       } finally {
         setLoading(false);
       }
     };
-    fetchData();
+    if (url) {
+      fetchData();
+    }
   }, [url]);
   return [{ response, error, loading, setError }, setRequestData];
 };

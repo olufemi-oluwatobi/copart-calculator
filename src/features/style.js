@@ -16,6 +16,21 @@ export const MainWrapper = styled.div`
   .ant-steps{
     display: none
   }
+  .notification {
+    width: 100%;
+    display: none;
+    height: fit-content;
+    font-weight: 500;
+font-size: 12px;
+    background: #C7D4E8;
+    margin-bottom: 10px;
+    color: #172B4D;
+    top: 0;
+    right: 0;
+    margin-top: -28px!important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
   .main_header {
     background: #ffffff;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
@@ -44,9 +59,19 @@ export const MainWrapper = styled.div`
     margin-top: 40px;
     background: #f5f5f5;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: center;
-    font-style: Noto sans;
+    align-content: right;
+    padding-right: 10vw;
+    span{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 130%;
+      /* neutral/dark100 */
+
+      color: #343541;
+    }
       
  }
   @media (max-width: 800px) {
@@ -56,6 +81,13 @@ export const MainWrapper = styled.div`
       flex-direction: column;
       height: fit-content;
       padding-top: 30px;
+    }
+    .notification {
+      display: flex;
+      padding: 10px;
+      text-align: left;
+      justify-content: space-between;
+
     }
     .ant-steps{
       display: ${(props) => (props.displaySteps ? "flex" : "none")}

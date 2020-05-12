@@ -1,0 +1,147 @@
+[
+  {
+    "Sale Price Range": "Sale Price Range",
+    "Secured Funds Fees": "Secured Funds Fees",
+    "Non-Secured Funds Fees": "Non-Secured Funds Fees"
+  },
+  {
+    "Sale Price Range": "$0.01 - $49.99",
+    "Secured Funds Fees": 1,
+    "Non-Secured Funds Fees": 27.5
+  },
+  {
+    "Sale Price Range": "$50.00 - $99.99",
+    "Secured Funds Fees": 1,
+    "Non-Secured Funds Fees": 40
+  },
+  {
+    "Sale Price Range": "$100.00 - $199.99",
+    "Secured Funds Fees": 25,
+    "Non-Secured Funds Fees": 65
+  },
+  {
+    "Sale Price Range": "$200.00 - $299.99",
+    "Secured Funds Fees": 50,
+    "Non-Secured Funds Fees": 90
+  },
+  {
+    "Sale Price Range": "$300.00 - $399.99",
+    "Secured Funds Fees": 75,
+    "Non-Secured Funds Fees": 110
+  },
+  {
+    "Sale Price Range": "$400.00 - $499.99",
+    "Secured Funds Fees": 110,
+    "Non-Secured Funds Fees": 130
+  },
+  {
+    "Sale Price Range": "$500.00 - $599.99",
+    "Secured Funds Fees": 125,
+    "Non-Secured Funds Fees": 150
+  },
+  {
+    "Sale Price Range": "$600.00 - $699.99",
+    "Secured Funds Fees": 140,
+    "Non-Secured Funds Fees": 170
+  },
+  {
+    "Sale Price Range": "$700.00 - $799.99",
+    "Secured Funds Fees": 155,
+    "Non-Secured Funds Fees": 190
+  },
+  {
+    "Sale Price Range": "$800.00 - $899.99",
+    "Secured Funds Fees": 170,
+    "Non-Secured Funds Fees": 210
+  },
+  {
+    "Sale Price Range": "$900.00 - $999.99",
+    "Secured Funds Fees": 185,
+    "Non-Secured Funds Fees": 230
+  },
+  {
+    "Sale Price Range": "$1,000.00 - $1,199.99",
+    "Secured Funds Fees": 200,
+    "Non-Secured Funds Fees": 255
+  },
+  {
+    "Sale Price Range": "$1,200.00 - $1,399.99",
+    "Secured Funds Fees": 225,
+    "Non-Secured Funds Fees": 290
+  },
+  {
+    "Sale Price Range": "$1,400.00 - $1,599.99",
+    "Secured Funds Fees": 250,
+    "Non-Secured Funds Fees": 315
+  },
+  {
+    "Sale Price Range": "$1,600.00 - $1,799.99",
+    "Secured Funds Fees": 275,
+    "Non-Secured Funds Fees": 345
+  },
+  {
+    "Sale Price Range": "$1,800.00 - $1,999.99",
+    "Secured Funds Fees": 300,
+    "Non-Secured Funds Fees": 375
+  },
+  {
+    "Sale Price Range": "$2,000.00 - $2,499.99",
+    "Secured Funds Fees": 325,
+    "Non-Secured Funds Fees": 415
+  },
+  {
+    "Sale Price Range": "$2,500.00 - $2,999.99",
+    "Secured Funds Fees": 350,
+    "Non-Secured Funds Fees": 455
+  },
+  {
+    "Sale Price Range": "$3,000.00 - $4,999.99",
+    "Secured Funds Fees": 400,
+    "Non-Secured Funds Fees": 565
+  },
+  {
+    "Sale Price Range": "$5,000.00 - $7,499.99",
+    "Secured Funds Fees": 425,
+    "Non-Secured Funds Fees": 665
+  },
+  {
+    "Sale Price Range": "$7,500.00 - $9,999.99",
+    "Secured Funds Fees": 450,
+    "Non-Secured Funds Fees": 765
+  },
+  {
+    "Sale Price Range": "$10,000.00 - $14,999.99",
+    "Secured Funds Fees": 500,
+    "Non-Secured Funds Fees": 970
+  },
+  {
+    "Sale Price Range": "$15,000.00 - $19,999.99",
+    "Secured Funds Fees": 550,
+    "Non-Secured Funds Fees": 1175
+  },
+  {
+    "Sale Price Range": "$20,000.00 - $24,999.99",
+    "Secured Funds Fees": 600,
+    "Non-Secured Funds Fees": 1375
+  },
+  {
+    "Sale Price Range": "$25,000.00 - $29,999.99",
+    "Secured Funds Fees": 650,
+    "Non-Secured Funds Fees": 1575
+  },
+  {
+    "Sale Price Range": "$30,000.00 - $34,999.99",
+    "Secured Funds Fees": 700,
+    "Non-Secured Funds Fees": 1775
+  },
+  {
+    "Sale Price Range": "$35,000.00 - $9,999,999.99",
+    "Secured Funds Fees": 0.02,
+    "Non-Secured Funds Fees": 0.05
+  },
+  {
+    "Sale Price Range": "Homeowners Items",
+    "Secured Funds Fees": 0.2,
+    "Non-Secured Funds Fees": 0.25
+  }
+]

@@ -1,0 +1,11 @@
+[
+  { "Sale Price": "$0.00 - $99.99", "Online Live Bid": "FREE" },
+  { "Sale Price": "$100.00 - $499.99", "Online Live Bid": 39 },
+  { "Sale Price": "$500.00 - $999.99", "Online Live Bid": 49 },
+  { "Sale Price": "$1,000.00 - $1,499.99", "Online Live Bid": 69 },
+  { "Sale Price": "$1,500.00 - $1,999.99", "Online Live Bid": 79 },
+  { "Sale Price": "$2,000.00 - $3,999.99", "Online Live Bid": 89 },
+  { "Sale Price": "$4,000.00 - $5,999.99", "Online Live Bid": 99 },
+  { "Sale Price": "$6,000.00 - $7,999.99", "Online Live Bid": 119 },
+  { "Sale Price": "$8000.00 - $10,000,000.00", "Online Live Bid": 129 }
+]

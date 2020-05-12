@@ -1,0 +1,268 @@
+[
+  {
+    "Sale Price Range": "$0.01 - $49.99",
+    "Fee A": 1,
+    "Fee B": 27.5,
+    "Fee C": 25,
+    "Fee D": 27.5
+  },
+  {
+    "Sale Price Range": "$50.00 - $99.99",
+    "Fee A": 1,
+    "Fee B": 40,
+    "Fee C": 45,
+    "Fee D": 50
+  },
+  {
+    "Sale Price Range": "$100.00 - $199.99",
+    "Fee A": 25,
+    "Fee B": 65,
+    "Fee C": 80,
+    "Fee D": 90
+  },
+  {
+    "Sale Price Range": "$200.00 - $299.99",
+    "Fee A": 50,
+    "Fee B": 90,
+    "Fee C": 120,
+    "Fee D": 135
+  },
+  {
+    "Sale Price Range": "$300.00 - $349.99",
+    "Fee A": 75,
+    "Fee B": 110,
+    "Fee C": 120,
+    "Fee D": 137.5
+  },
+  {
+    "Sale Price Range": "$350.00 - $399.99",
+    "Fee A": 75,
+    "Fee B": 110,
+    "Fee C": 120,
+    "Fee D": 140
+  },
+  {
+    "Sale Price Range": "$400.00 - $449.99",
+    "Fee A": 110,
+    "Fee B": 130,
+    "Fee C": 160,
+    "Fee D": 182.5
+  },
+  {
+    "Sale Price Range": "$450.00 - $499.99",
+    "Fee A": 110,
+    "Fee B": 130,
+    "Fee C": 160,
+    "Fee D": 185
+  },
+  {
+    "Sale Price Range": "$500.00 - $549.99",
+    "Fee A": 125,
+    "Fee B": 150,
+    "Fee C": 185,
+    "Fee D": 212.5
+  },
+  {
+    "Sale Price Range": "$550.00 - $599.99",
+    "Fee A": 130,
+    "Fee B": 150,
+    "Fee C": 185,
+    "Fee D": 215
+  },
+  {
+    "Sale Price Range": "$600.00 - $699.99",
+    "Fee A": 140,
+    "Fee B": 170,
+    "Fee C": 210,
+    "Fee D": 245
+  },
+  {
+    "Sale Price Range": "$700.00 - $799.99",
+    "Fee A": 155,
+    "Fee B": 190,
+    "Fee C": 230,
+    "Fee D": 270
+  },
+  {
+    "Sale Price Range": "$800.00 - $899.99",
+    "Fee A": 170,
+    "Fee B": 210,
+    "Fee C": 250,
+    "Fee D": 295
+  },
+  {
+    "Sale Price Range": "$900.00 - $999.99",
+    "Fee A": 185,
+    "Fee B": 230,
+    "Fee C": 275,
+    "Fee D": 325
+  },
+  {
+    "Sale Price Range": "$1,000.00 - $1,199.99",
+    "Fee A": 200,
+    "Fee B": 255,
+    "Fee C": 325,
+    "Fee D": 385
+  },
+  {
+    "Sale Price Range": "$1,200.00 - $1,299.99",
+    "Fee A": 225,
+    "Fee B": 290,
+    "Fee C": 350,
+    "Fee D": 415
+  },
+  {
+    "Sale Price Range": "$1,300.00 - $1,399.99",
+    "Fee A": 240,
+    "Fee B": 305,
+    "Fee C": 365,
+    "Fee D": 435
+  },
+  {
+    "Sale Price Range": "$1,400.00 - $1,499.99",
+    "Fee A": 250,
+    "Fee B": 315,
+    "Fee C": 380,
+    "Fee D": 455
+  },
+  {
+    "Sale Price Range": "$1,500.00 - $1,599.99",
+    "Fee A": 260,
+    "Fee B": 325,
+    "Fee C": 390,
+    "Fee D": 470
+  },
+  {
+    "Sale Price Range": "$1,600.00 - $1,699.99",
+    "Fee A": 275,
+    "Fee B": 345,
+    "Fee C": 410,
+    "Fee D": 495
+  },
+  {
+    "Sale Price Range": "$1,700.00 - $1,799.99",
+    "Fee A": 285,
+    "Fee B": 355,
+    "Fee C": 420,
+    "Fee D": 510
+  },
+  {
+    "Sale Price Range": "$1,800.00 - $1,999.99",
+    "Fee A": 300,
+    "Fee B": 375,
+    "Fee C": 440,
+    "Fee D": 540
+  },
+  {
+    "Sale Price Range": "$2,000.00 - $2,399.99",
+    "Fee A": 325,
+    "Fee B": 415,
+    "Fee C": 470,
+    "Fee D": 590
+  },
+  {
+    "Sale Price Range": "$2,400.00 - $2,499.99",
+    "Fee A": 335,
+    "Fee B": 425,
+    "Fee C": 480,
+    "Fee D": 605
+  },
+  {
+    "Sale Price Range": "$2,500.00 - $2,999.99",
+    "Fee A": 350,
+    "Fee B": 455,
+    "Fee C": 500,
+    "Fee D": 650
+  },
+  {
+    "Sale Price Range": "$3,000.00 - $3,499.99",
+    "Fee A": 400,
+    "Fee B": 565,
+    "Fee C": 600,
+    "Fee D": 775
+  },
+  {
+    "Sale Price Range": "$3,500.00 - $3,999.99",
+    "Fee A": 450,
+    "Fee B": 615,
+    "Fee C": 650,
+    "Fee D": 850
+  },
+  {
+    "Sale Price Range": "$4,000.00 - $4,499.99",
+    "Fee A": 475,
+    "Fee B": 640,
+    "Fee C": 675,
+    "Fee D": 900
+  },
+  {
+    "Sale Price Range": "$4,500.00 - $4,999.99",
+    "Fee A": 500,
+    "Fee B": 665,
+    "Fee C": 700,
+    "Fee D": 950
+  },
+  {
+    "Sale Price Range": "$5,000.00 - $5,999.99",
+    "Fee A": 0.1,
+    "Fee B": 0.15,
+    "Fee C": 0.15,
+    "Fee D": 0.2
+  },
+  {
+    "Sale Price Range": "$6,000.00 - $7,499.99",
+    "Fee A": 0.1,
+    "Fee B": 0.15,
+    "Fee C": 0.15,
+    "Fee D": 0.2
+  },
+  {
+    "Sale Price Range": "$7,500.00 - $9,999.99",
+    "Fee A": 0.1,
+    "Fee B": 0.15,
+    "Fee C": 0.15,
+    "Fee D": 0.2
+  },
+  {
+    "Sale Price Range": "$10,000.00 - $14,999.99",
+    "Fee A": 0.1,
+    "Fee B": 0.15,
+    "Fee C": 0.15,
+    "Fee D": 0.2
+  },
+  {
+    "Sale Price Range": "$15,000.00 - $19,999.99",
+    "Fee A": 0.1,
+    "Fee B": 0.15,
+    "Fee C": 0.15,
+    "Fee D": 0.2
+  },
+  {
+    "Sale Price Range": "$20,000.00 - $24,999.99",
+    "Fee A": 0.1,
+    "Fee B": 0.15,
+    "Fee C": 0.15,
+    "Fee D": 0.2
+  },
+  {
+    "Sale Price Range": "$25,000.00 - $29,999.99",
+    "Fee A": 0.1,
+    "Fee B": 0.15,
+    "Fee C": 0.15,
+    "Fee D": 0.2
+  },
+  {
+    "Sale Price Range": "$30,000.00 - $34,999.99",
+    "Fee A": 0.1,
+    "Fee B": 0.15,
+    "Fee C": 0.15,
+    "Fee D": 0.2
+  },
+  {
+    "Sale Price Range": "$35,000.00 - $10,000,000.00",
+    "Fee A": 0.1,
+    "Fee B": 0.15,
+    "Fee C": 0.15,
+    "Fee D": 0.2
+  }
+]

@@ -5,13 +5,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./main/main/App";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import * as serviceWorker from "./serviceWorker";
-import { Provider } from "react-redux";
 
 ReactDOM.render(
-  <Router basename="/">
+  <Router>
     <App />
   </Router>,
   document.getElementById("root")

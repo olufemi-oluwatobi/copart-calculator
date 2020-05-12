@@ -1,15 +1,17 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
+
 import "./App.css";
 import Main from "./route";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Main />
-      </div>
-    );
-  }
-}
+// const history = createBrowserHistory();
+// ReactGA.initialize("UA-164220621-1");
+
+const App = () => {
+  return (
+    <div className="App">
+      <Main />
+    </div>
+  );
+};
 
 export default App;
